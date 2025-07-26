@@ -1,4 +1,22 @@
+#Author: Jesus Arias
+#GitHub username: ariasje1
+#Date: 07/25/2025
+#Description: Finds the path with the minimal maximum height difference in a grid.
 def minEffort(puzzle):
+    """
+        Finds the minimum effort required to travel from the top-left corner
+        to the bottom-right corner of a 2D puzzle grid.
+
+        This function returns the minimum possible effort among all valid
+        paths from the starting cell [0][0] to the destination [m-1][n-1].
+
+        Parameters:
+            puzzle (list of list of int): A 2D grid where puzzle[i][j]
+            represents the height of the cell at row i and column j.
+
+        Returns:
+            int: The minimum effort required to reach the bottom-right cell.
+        """
     if not puzzle or not puzzle[0]:
         return 0
 
